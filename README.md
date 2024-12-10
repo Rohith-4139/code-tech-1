@@ -48,3 +48,24 @@ Input: Enter second number: 5
 Input: Choose an operation (+, -, *, /): +
 Output: Result: 15
 This project is straightforward and a great starting point for beginners to learn basic Python programming.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+![image](https://github.com/user-attachments/assets/8d28e88d-be7b-42df-bc8c-6286a0744221)
+
