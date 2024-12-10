@@ -1,0 +1,54 @@
+The task is to create a simple Python program that simulates a basic calculator. Here's a brief breakdown:
+User Input:
+Ask the user to provide two numbers (inputs for the calculation).
+Let the user choose an operation (addition, subtraction, multiplication, or division).
+Perform the Operation:
+Based on the user's choice, execute the corresponding mathematical operation using the input numbers.
+Output the Result:
+Display the result of the calculation back to the user.
+
+code:
+
+def calculator():
+    print("Welcome to the Basic Calculator!")
+    print("Select an operation:")
+    print("1. Addition (+)")
+    print("2. Subtraction (-)")
+    print("3. Multiplication (*)")
+    print("4. Division (/)")
+    
+
+    choice = input("Enter the number corresponding to your choice (1/2/3/4): ")
+    
+
+    if choice not in ['1', '2', '3', '4']:
+        print("Invalid choice. Please restart the program and select a valid operation.")
+        return
+
+    try:
+        num1 = float(input("Enter the first number: "))
+        num2 = float(input("Enter the second number: "))
+    except ValueError:
+        print("Invalid input. Please enter numeric values.")
+        return
+    
+    if choice == '1':
+        result = num1 + num2
+        operation = "Addition"
+    elif choice == '2':
+        result = num1 - num2
+        operation = "Subtraction"
+    elif choice == '3':
+        result = num1 * num2
+        operation = "Multiplication"
+    elif choice == '4':
+        if num2 == 0:  
+            print("Division by zero is not allowed.")
+            return
+        result = num1 / num2
+        operation = "Division"
+    
+    print(f"{operation} of {num1} and {num2} is: {result}")
+
+
+calculator()
